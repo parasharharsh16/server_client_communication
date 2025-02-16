@@ -2,7 +2,7 @@ import requests
 server_url = 'http://192.168.56.101:8080/'
 
 try:
-    print("Trying to connect to the server...")  # Log before sending a request
+    print("Trying to connect to the server...")
     response = requests.get(server_url)
     if response.status_code == 200:
         print(f"Server says: {response.json()['message']}")
